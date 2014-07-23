@@ -2,6 +2,7 @@
             ПЕРЕМЕННЫЕ
 ============================================== */
 
+@orange: #FD7500;
 
 
 /* ==============================================
@@ -11,9 +12,18 @@
 body { font-family: 'Open Sans', sans-serif; font-size: 14px; background: url(/layout/img/BG_body/green-2.jpg) 0px 0px; color: #444; }
 
 .container { width: 1200px; background:#eee; }
+
+/* для главной */
 .index-container { margin-top: -5px; }
 
-a { color: #FD7500; text-decoration: none; }
+/* для всего */
+.content-container { padding: 20px;
+    &.container-bg { background: #DDD; }
+}
+
+a { color: @orange; text-decoration: none;
+    &:hover { color: @orange - #222222; }
+}
 
 
 /* ==============================================
@@ -83,7 +93,9 @@ a { color: #FD7500; text-decoration: none; }
             ФУТЕР 
 ============================================== */
 
-
+footer { height: 150px; background: url(/layout/img/BG_content/black_linen.png); margin:20px 0px -21px; color: #ccc;
+    .container { height: 100%; background: url(/layout/img/BG_content/black_linen.png); }
+}
 
 
 
