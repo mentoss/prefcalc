@@ -27,14 +27,44 @@ a { color: @orange; text-decoration: none;
 
 
 /* ==============================================
-            ГЛАВНАЯ СТРАНИЦА 
+            МЕНЮ + КАРТИНКА В ШАПКЕ
 ============================================== */
+#header .container { margin-top: 30px;
+        
+    /* logo */
+     h1 { margin-bottom: 0px; 
+         #logo { display: block; overflow: hidden; float: left; z-index: 201; margin: -20px 0px 0px -30px; position: absolute; font-size: 0.5em; color: #000; text-decoration: none; 
+            img { float: left; padding-right: 15px; }
+            span { position: relative; top: 30px; color: #FFF; font-size: 19px; 
+                    b { font-size: 2em; font-family: 'Lobster', cursive; font-weight: 300; }
+            }
+        }
+     }
+    
+    /* menu */
+    .topmenu { float: left; display: inline; width: 100%; height: 82px; background: #2C3E50;
+    
+    }
+}
+
+#header #menu { float: right; 
+    ul { float: left; position: relative; margin: 0px; padding: 0px; background: #2C3E50; list-style: none outside; 
+        li { margin: 0; position: relative; z-index: 203; float: left; 
+            a { padding: 30px 20px 30px; display: block; font-size: 15px; color: #FFF; white-space: nowrap; text-transform: uppercase; text-decoration: none; 
+                &:hover { background: #FFB677 !important; color: #FFF; }
+            }
+            &.active > a,
+            &.active > a:hover  { background: #FFA04E!important; color: #FFF; }
+        }
+    }
+}
 
 /* баннер */
 .fullwidthbanner-container { width: 100%; min-width: 1200px; position: relative; overflow: hidden;     
     .index-slot { width: 100%; min-width: 1200px; height: 100%;             
         .default_img-banner { width: 100%; min-width: 1200px; }
-    }   
+    }
+    .inner-slot { height: 200px; }
 }
 
 /* текст на баннере */
@@ -42,6 +72,10 @@ a { color: @orange; text-decoration: none;
 .sayings_last { font-size: 2.3em; padding: 8px 12px 12px; white-space: nowrap; position: absolute; color: #FFF; font-weight: 300;  }
 .sayings_first { left: 35%; bottom: 27%; background: #FFA04E; }
 .sayings_last { left: 41%; bottom: 8%; background: #2C3E50; }
+
+/* ==============================================
+            ГЛАВНАЯ СТРАНИЦА 
+============================================== */
 
 /* колонки внизу */
 .col_bg {  width: 400px;    
@@ -64,51 +98,20 @@ a { color: @orange; text-decoration: none;
 ============================================== */
 
 
-/* ==============================================
-            ШАПКА + МЕНЮ
-============================================== */
-#header { margin-top: 30px;
-    .topmenu { float: left; display: inline; width: 100%; height: 82px; background: #2C3E50;
-         h1 { margin-bottom: 0px; }
-    }
-}
-
-#header #logo { display: block; overflow: hidden; float: left; z-index: 201; margin: -20px 0px 0px -30px; position: absolute; }
-#header #logo { font-size: 0.5em; color: #000; text-decoration: none; }
-#header #logo img { float: left; padding-right: 15px; }
-#header #logo span { position: relative; top: 30px; color: #FFF; font-size: 19px; }
-#header #logo span b { font-size: 2em; font-family: 'Lobster', cursive; font-weight: 300; }
-
-#header #menu                       { float: right; }
-#header #menu > ul                  { float: left; position: relative; margin: 0px; padding: 0px; background: #2C3E50; list-style: none outside; }
-#header #menu > ul > li             { margin: 0; position: relative; z-index: 203; float: left; }
-#header #menu > ul > li > a         { padding: 30px 20px 30px; display: block; font-size: 15px; color: #FFF; white-space: nowrap; text-transform: uppercase; text-decoration: none; }
-#header #menu > ul > li.active > a,
-#header #menu > ul > li.active > a:hover  { background: #FFA04E!important; color: #FFF; }
-#header #menu > ul > li > a:hover,
-#header #menu > ul > li.hover > a { background: #FFB677 !important; color: #FFF; } 
 
 
 /* ==============================================
             ФУТЕР 
 ============================================== */
 
-footer { height: 150px; background: url(/layout/img/BG_content/black_linen.png); margin:20px 0px -21px; color: #ccc;
-    .container { height: 100%; background: url(/layout/img/BG_content/black_linen.png); }
+footer { background: url(/layout/img/BG_content/black_linen.png); margin:20px 0px -21px; color: #ccc;
+    .container { height: 100%; background: url(/layout/img/BG_content/black_linen.png);
+        p { margin: 0px;}
+    }
 }
-
-
 
 
 /* ==============================================
             ВСПОМОГАТЕЛЬНЫЕ КЛАССЫ
 ============================================== */
 
-
-
-
-
-
-/* ==============================================
-            ГЛОБАЛЬНЫЕ СТИЛИ 
-============================================== */
