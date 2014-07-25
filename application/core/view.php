@@ -12,6 +12,5 @@ class View {
         }
         */        
         include 'application/views/'.$template_view;
-        include 'application/views/header/'.$header_view;
     }
 }

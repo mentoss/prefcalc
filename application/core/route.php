@@ -13,7 +13,7 @@ class Route {
         if ( !empty($routes[1]) ) {	
             $controller_name = $routes[1];
         }
-        
+
         // получаем имя экшена
         if ( !empty($routes[2]) ) {
             $action_name = $routes[2];
@@ -29,7 +29,7 @@ class Route {
         $model_path = "application/models/".$model_file;
         
         if(file_exists($model_path)) {
-            include "application/models/".$model_file;
+            include "/application/models/".$model_file;
         }
 
         // подцепляем файл с классом контроллера
@@ -48,6 +48,7 @@ class Route {
         }
         
         // создаем контроллер
+        $controller_name = str_replace("-", "_", $controller_name);
         $controller = new $controller_name;
         $action = $action_name;
         
