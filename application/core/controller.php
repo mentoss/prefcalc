@@ -6,7 +6,6 @@ class Controller {
     public $view;
     public $header;
     
-    
     function __construct() {
         $this->view = new View();
     }

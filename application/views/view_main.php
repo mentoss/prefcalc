@@ -21,8 +21,8 @@
         <div class="desc">
             <h2>КАЛЬКУЛЯТОР ПУЛИ</h2>
             <p>Калькулятор расчета пули в преферансе (по «вистам»).</p>
-            <a class="button" href="/">На четверых</a>
-            <a class="left button" href="/">На троих</a>
+            <a class="btn btn-default" href="/">На четверых</a>
+            <a class="btn btn-default" href="/">На троих</a>
         </div>            
     </div>
 

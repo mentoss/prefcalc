@@ -10,7 +10,7 @@ class View {
             // преобразуем элементы массива в переменные
             extract($data);
         }
-        */        
+        */
         include 'application/views/'.$template_view;
     }
 }

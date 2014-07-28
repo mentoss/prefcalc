@@ -1,4 +1,10 @@
 <div class="content-container">
+
+<ol class="breadcrumb">
+    <li><a href="/">Главная</a></li>
+    <li class="active">Цена взяток и вистов</li>
+</ol>
+
     <h5>Подсчёт взяток и вистов</h5>
 
     <table class="table">

@@ -1,11 +1,18 @@
 <div class="content-container">
+
+    <ol class="breadcrumb">
+        <li><a href="/">Главная</a></li>
+        <li class="active">Расчёт пули на троих</li>
+    </ol>
+
     <form method="post" action="" class="calculate-form">
 
         <table class="option">
            <tbody><tr>
                <td>
                    <h4>Бланк пули на троих</h4>
-                    <p><a class="button" href="#"><i class="fa fa-download"></i> Скачать</a><a class="button" href="#"><i class="fa fa-print"></i> распечатать</a></p>
+                    <p><p><a class="btn btn-default" href="#"><i class="fa fa-download"></i> Скачать</a>
+                       <a class="btn btn-default" href="#"><i class="fa fa-print"></i> распечатать</a></p>
                </td>
                <td>
                     <h4>Настройки игры</h4>                                                                           

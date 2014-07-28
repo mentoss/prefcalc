@@ -32,8 +32,8 @@ $css_file_name = Less_Cache::Get( $files, $options );
     <!-- Framework CSS -->
     <link rel="stylesheet" href="../../layout/css/src/reset.css" type="text/css" media="screen, projection">    
     <link rel="stylesheet" href="../../layout/css/liquid.css" type="text/css" media="screen, projection">    
-    <link rel="stylesheet" href="../../layout/css/src/typography.css" type="text/css" media="screen, projection">        
-    <link rel="stylesheet" href="../../layout/css/plugins/buttons/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="../../layout/css/src/typography.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="../../layout/css/bootstrap/bootstrap.min.css" type="text/css" media="screen, projection">
     <link rel="stylesheet" href="../../layout/css/src/print.css" type="text/css" media="print">
     
     <!-- Fonts CSS -->
@@ -96,16 +96,15 @@ $css_file_name = Less_Cache::Get( $files, $options );
 	<?php include 'application/views/header/'.$header_view; ?>
 	
   <!-- CONTENT -->
-    <div class="container index-container">       
-        <?php include 'application/views/'.$content_view; ?>        
+    <div class="container index-container">
+        <?php include 'application/views/'.$content_view; ?>
     </div>  
         
     <footer id="footer">        
         <div class="container">
-            <div class="content-container">               
-                <p >
-                    Все материалы взяты из открытых источников.
-                </p>			
+            <div class="content-container">
+                <p class="pull-right"><a href="#">Здесь никого нет</a></p>
+                <p>Все материалы взяты из открытых источников, идея из головы, реализация из свободного времени.</p>
             </div>
         </div>	
     </footer>

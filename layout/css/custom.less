@@ -11,7 +11,7 @@
 
 body { font-family: 'Open Sans', sans-serif; font-size: 14px; background: url(/layout/img/BG_body/green-2.jpg) 0px 0px; color: #444; }
 
-.container { width: 1200px; background:#eee; }
+.container { width: 1200px; background:#eee; padding: 0px; }
 
 /* для главной */
 .index-container { margin-top: -5px; }
@@ -32,7 +32,7 @@ a { color: @orange; text-decoration: none;
 #header .container { margin-top: 30px;
         
     /* logo */
-     h1 { margin-bottom: 0px; 
+     h1 { margin: 0px;
          #logo { display: block; overflow: hidden; float: left; z-index: 201; margin: -20px 0px 0px -30px; position: absolute; font-size: 0.5em; color: #000; text-decoration: none; 
             img { float: left; padding-right: 15px; }
             span { position: relative; top: 30px; color: #FFF; font-size: 19px; 
@@ -42,9 +42,7 @@ a { color: @orange; text-decoration: none;
      }
     
     /* menu */
-    .topmenu { float: left; display: inline; width: 100%; height: 82px; background: #2C3E50;
-    
-    }
+    .topmenu { float: left; display: inline; width: 100%; height: 82px; background: #2C3E50; }
 }
 
 #header #menu { float: right; 
@@ -60,11 +58,13 @@ a { color: @orange; text-decoration: none;
 }
 
 /* баннер */
-.fullwidthbanner-container { width: 100%; min-width: 1200px; position: relative; overflow: hidden;     
+.fullwidthbanner-container { width: 100%; min-width: 1200px; position: relative; overflow: hidden;
     .index-slot { width: 100%; min-width: 1200px; height: 100%;             
         .default_img-banner { width: 100%; min-width: 1200px; }
     }
-    .inner-slot { height: 200px; }
+    .inner-slot { height: 200px;
+      .sayings_first { bottom: 5%; left:20% ; font-size: 1.8em; }
+    }
 }
 
 /* текст на баннере */
@@ -78,7 +78,7 @@ a { color: @orange; text-decoration: none;
 ============================================== */
 
 /* колонки внизу */
-.col_bg {  width: 400px;    
+.col_bg { height: 450px;  width: 400px;
     .photo { width: 100%; height: 234px;  margin: 0px; border-bottom: 3px solid #555;         
         a { margin: 0px; padding: 0px; vertical-align: top;                
             img { width: 100%; height: 100%; }
@@ -97,7 +97,19 @@ a { color: @orange; text-decoration: none;
             ВНУТРЕННИЕ СТРАНИЦЫ 
 ============================================== */
 
+/* крошки */
+.content-container {
+  .breadcrumb { margin: -15px -20px 15px -20px; border-radius: 0px; background-color: #DDE3E9; }
+}
 
+.forest { background:url(/layout/img/forest.png); height: 670px;
+  .wtf_form { width: 60%; margin: 280px 0px 0px ; padding: 30px; background: rgba(255, 255, 255, 0.6);
+    textarea { height: 100px; resize: none; }
+  }
+  .breadcrumb { background-color: rgba(0, 0, 0, 0.6); }
+
+
+}
 
 
 /* ==============================================
