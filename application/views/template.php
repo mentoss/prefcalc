@@ -31,8 +31,7 @@ $css_file_name = Less_Cache::Get( $files, $options );
 
     <!-- Framework CSS -->
     <link rel="stylesheet" href="../../layout/css/src/reset.css" type="text/css" media="screen, projection">    
-    <link rel="stylesheet" href="../../layout/css/liquid.css" type="text/css" media="screen, projection">    
-    <link rel="stylesheet" href="../../layout/css/src/typography.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="../../layout/css/liquid.css" type="text/css" media="screen, projection">
     <link rel="stylesheet" href="../../layout/css/bootstrap/bootstrap.min.css" type="text/css" media="screen, projection">
     <link rel="stylesheet" href="../../layout/css/src/print.css" type="text/css" media="print">
     
@@ -45,10 +44,6 @@ $css_file_name = Less_Cache::Get( $files, $options );
     <? echo '<link rel="stylesheet" type="text/css" href="../../layout/css/cache-css/'.$css_file_name.'">'; ?>        
     
     <!--[if lt IE 8]><link rel="stylesheet" href="../../layout/css/ie.css" type="text/css" media="screen, projection"><![endif]-->
-    
-    <style>
-          <? //echo $css; ?>        
-    </style>
 
   </head>
   
@@ -100,10 +95,12 @@ $css_file_name = Less_Cache::Get( $files, $options );
         <?php include 'application/views/'.$content_view; ?>
     </div>  
         
-    <footer id="footer">        
+    <footer id="footer">
+        <a href="#">
+            <img class="pull-right" src="../../layout/img/via.png" alt=""/>
+        </a>
         <div class="container">
             <div class="content-container">
-                <p class="pull-right"><a href="#">Здесь никого нет</a></p>
                 <p>Все материалы взяты из открытых источников, идея из головы, реализация из свободного времени.</p>
             </div>
         </div>	
@@ -113,6 +110,8 @@ $css_file_name = Less_Cache::Get( $files, $options );
     ================================================== -->
     <script src="../../layout/js/jquery-1.11.1.min.js"></script>
     <script src="../../layout/js/modernizr.custom.66416.js"></script>
-            
+    <script src="../../layout/js/bootstrap.min.js"></script>
+    <script src="../../layout/js/custom.js"></script>
+
   </body>
 </html>

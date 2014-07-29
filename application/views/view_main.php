@@ -8,27 +8,27 @@
         <div class="desc">
             <h2>ТАБЛИЦЫ СТОИМОСТИ КОНТРАКТОВ</h2>
             <p>Таблицы стоимости заказов (контрактов) игpока в преферанс.</p>
-            <a class="" href="/">Далее <i class="fa fa-angle-double-right"></i></a>
+            <a class="" href="/contracts">Далее <i class="fa fa-angle-double-right"></i></a>
         </div>            
     </div>
 
     <div class="column span-8 col_bg">
        <div class="photo">
-            <a href="/">
+           <a>
                 <img class="scale-with-grid" src="../../layout/img/content/calc.png" alt="Save plenty of time">
-            </a>
+           </a>
         </div>
         <div class="desc">
             <h2>КАЛЬКУЛЯТОР ПУЛИ</h2>
             <p>Калькулятор расчета пули в преферансе (по «вистам»).</p>
-            <a class="btn btn-default" href="/">На четверых</a>
-            <a class="btn btn-default" href="/">На троих</a>
+            <a class="btn btn-default" href="/four-player">На четверых</a>
+            <a class="btn btn-default" href="/three-player">На троих</a>
         </div>            
     </div>
 
     <div class="column span-8 last col_bg">
        <div class="photo">
-            <a href="/">
+            <a href="/codex">
                 <img class="scale-with-grid" src="../../layout/img/content/kodex.png" alt="Save plenty of time">
             </a>
         </div>

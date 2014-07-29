@@ -11,7 +11,7 @@
 
 body { font-family: 'Open Sans', sans-serif; font-size: 14px; background: url(/layout/img/BG_body/green-2.jpg) 0px 0px; color: #444; }
 
-.container { width: 1200px; background:#eee; padding: 0px; }
+.container { width: 1200px; background:#f9f9f9; padding: 0px; }
 
 /* для главной */
 .index-container { margin-top: -5px; }
@@ -107,8 +107,28 @@ a { color: @orange; text-decoration: none;
     textarea { height: 100px; resize: none; }
   }
   .breadcrumb { background-color: rgba(0, 0, 0, 0.6); }
+}
 
+/* таблица-калькулятор */
 
+.table-options {
+  td { padding: 0px 8px !important; border-top: 0px solid #FFF !important;
+    h4 { margin-bottom: 0px; }
+    p { margin-top: 10px;}
+  }
+}
+
+.table-calc { background: #fff;
+  thead th { text-align: center; }
+  td {  vertical-align: middle !important; }
+  .total {
+    span { font-weight: bold; }
+  }
+  tfoot {
+    span { font-size: 0.8em;
+      a:hover { text-decoration: none; }
+    }
+  }
 }
 
 
@@ -116,8 +136,9 @@ a { color: @orange; text-decoration: none;
             ФУТЕР 
 ============================================== */
 
-footer { background: url(/layout/img/BG_content/black_linen.png); margin:20px 0px -21px; color: #ccc;
-    .container { height: 100%; background: url(/layout/img/BG_content/black_linen.png);
+footer { position: relative; background: url(/layout/img/BG_content/green-fibers.png); margin:20px 0px -21px; color: #ccc;
+  img { position: absolute; right: 1%; bottom: 0px; }
+    .container { height: 100%; background: url(/layout/img/BG_content/green-fibers.png);
         p { margin: 0px;}
     }
 }

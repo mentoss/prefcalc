@@ -15,7 +15,7 @@
         </div>
 
         <div class="form-group">
-            <label for="inputPassword3" class="col-sm-2 control-label">Email</label>
+            <label for="inputPassword3" class="col-sm-2 control-label">Email <sup><span class="text-danger">*</span></sup></label>
             <div class="col-sm-10">
                 <input type="email" class="form-control" id="inputPassword3" placeholder="Email">
             </div>
@@ -34,6 +34,6 @@
             </div>
         </div>
 
-
     </form>
+
 </div>
