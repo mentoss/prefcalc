@@ -122,12 +122,17 @@ a { color: @orange; text-decoration: none;
   thead th { text-align: center; }
   td {  vertical-align: middle !important; }
   .total {
-    span { font-weight: bold; }
+    td { text-align:center; font-size: 1.5em;
+      span { font-weight: bold; }
+      h3 { margin:0px ; }
+    }
+
   }
   tfoot {
     span { font-size: 0.8em;
       a:hover { text-decoration: none; }
     }
+    ul ul { margin-left:30px; }
   }
 }
 
@@ -148,3 +153,17 @@ footer { position: relative; background: url(/layout/img/BG_content/green-fibers
             ВСПОМОГАТЕЛЬНЫЕ КЛАССЫ
 ============================================== */
 
+.bs-callout { padding: 20px; margin: 20px 0; border-left: 5px solid #EEE;
+  &.bs-callout-success  { border-left-color: #3C763D; background-color: #DFF0D8;
+    .fa { color: #3C763D; }
+  }
+  &.bs-callout-info     { border-left-color: #31708F; background-color: #D9EDF7;
+    .fa { color: #31708F; }
+  }
+  &.bs-callout-warning  { border-left-color: #8A6D3B; background-color: #FCF8E3;
+    .fa { color: #8A6D3B; }
+  }
+  &.bs-callout-danger   { border-left-color: #D9534F; background-color: #F2DEDE;
+    .fa { color: #D9534F; }
+  }
+}
